@@ -6,7 +6,7 @@ user_bp = Blueprint('user_bp', __name__)
 #get - list all the users (/users)
 @user_bp.route('/', methods=["GET"])
 def get_users():
-    users = service.get_all_usrs()
+    users = service.get_all_users()
     return jsonify(users), 200
 
 #get - get single user (/users/<id>)
